@@ -15,7 +15,7 @@ create table if not exists my_first_table (
 create table if not exists related_table (
 	id SERIAL primary key,
 	--  foreign key referencing id of my_first_table
-	main_table_id INTEGER references my_first_table(id)
+	main_table_id INTEGER references my_first_table(id),
 )
 
 -- drop table - Deletes entire table and all data
